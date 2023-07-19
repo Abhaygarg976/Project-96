@@ -1,0 +1,76 @@
+<html lang="en">
+
+<head>
+  <title>Login-Register</title>
+  <link rel="stylesheet" href="/css/logreg.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</head>
+
+
+<body>
+
+  <div class="background"></div>
+  <div class="container">
+    <div class="item">
+      <h2 class="logo"><i class="bx bxl-xing"></i>Project-96</h2>
+      <div class="text-item">
+        <h2>Welcome!
+          <br /><span>
+            To Our Face Recognition System
+          </span>
+        </h2>
+        <p>A Face recognition attendance system is used to automate the
+          process of taking attendance.</p>
+        <div class="social-icon">
+          <a href="#"><i class="bx bxl-facebook"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+          <a href="#"><i class="bx bxl-youtube"></i></a>
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+          <a href="#"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="login-section">
+      <div class="form-box login">
+        <form action="/login" method="post" class="sign-in-form">
+          <h2>Sign In</h2>
+          {{!-- <div class="input-box">
+            <span class="icon"><i class="bx bxs-microphone"></i></span>
+            <input type="text" id="speechInput" name="speechInput" />
+            <label for="speechInput">Voice Input</label>
+          </div> --}}
+          <div class="input-box">
+            <span class="icon"><i class="bx bxs-envelope"></i></span>
+            <input type="email" id="email" name="email" />
+            <label for="email">Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><i class="bx bxs-lock-alt"></i></span>
+            <input type="password" id="password" name="password" />
+            <label for="password">Password</label>
+          </div>
+          <div class="remember-password">
+            <label for=""><input type="checkbox" />Remember Me</label>
+            <a href="#">Forget Password</a>
+          </div>
+          <button type="submit" class="btn">Login In</button>
+          <div class="create-account">
+            <p>Create A New Account?
+              <a href="/auth_reg" class="register-link">Sign Up</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="/js/login.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
+
+</body>
+
+</html>
